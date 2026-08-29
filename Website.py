@@ -172,7 +172,7 @@ if aw == "Doctor List And Salary Analysis":
         p.write("End Date: October 5 2030 ")
 
     with j:
-        p.image(r"c:\Users\myosett\Desktop\My codes\Nyein Thu.png",
+        p.image("Nyein Thu.png",
                  caption=" Name: Dr.Nyein Thu")
         p.write("Specialization: Orthopedics & Traumatology")
         p.write("Experience: 17 Years")
