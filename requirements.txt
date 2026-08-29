@@ -1,0 +1,6 @@
+streamlit
+streamlit-folium
+folium
+altair
+pandas
+mysql-connector-python
