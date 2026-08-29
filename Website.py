@@ -73,7 +73,7 @@ if aw == "Departments":
 
     p.header("🏥 Our Departments")
     p.subheader("1. Emergency Department")
-    p.image(r"c:\Users\myosett\Desktop\My codes\emer.jpg")
+    p.image("emer.jpg")
     p.write("""Provides immediat"e medical care for serious
       injuries, accidents, sudden illnesses, 
       and other life-threatening conditions.""")
@@ -92,7 +92,7 @@ if aw == "Departments":
     p.write("-Cardiac consultation")
 
     p.subheader("3. Pediatrics Department")
-    p.image(r"c:\Users\myosett\Desktop\My codes\ped.jfif")
+    p.image("ped.jfif")
     p.write("Provides medical care for infants, children, and teenagers.")
     p.subheader("Services")
     p.write("-growth monitoring")
@@ -101,7 +101,7 @@ if aw == "Departments":
     p.write("-Child health checkups")
 
     p.subheader("4.Neurology Department")
-    p.image(r"c:\Users\myosett\Desktop\My codes\nuo.jfif")
+    p.image("nuo.jfif")
     p.write("Focuses on disorders affecting the brain, spinal cord, and nervous system.")
     p.subheader("Services")
     p.write("-nerve disorder treatment")
@@ -109,7 +109,7 @@ if aw == "Departments":
     p.write("-headache evaluation")
 
     p.subheader("5. Radiology & Imaging")
-    p.image(r"c:\Users\myosett\Desktop\My codes\radp.jfif")
+    p.image("radp.jfif")
     p.write("Provides diagnostic imaging to help doctors identify and monitor medical conditions.")
     p.subheader("Services")
     p.write("-X-ray")
@@ -136,7 +136,7 @@ if aw == "Doctor List And Salary Analysis":
     v, j, s = p.columns(3)
 
     with v:
-        p.image(r"c:\Users\myosett\Desktop\My codes\Thura.png",
+        p.image("Thura.png",
                 caption= "Name: -Dr. Thura" )
         p.write("Specialization: Cardiology & Cardiovascular Medicine")
         p.write("Experience: 14 Years")
@@ -145,7 +145,7 @@ if aw == "Doctor List And Salary Analysis":
         p.write("End Date: December 2030")
 
     with j:
-        p.image(r"c:\Users\myosett\Desktop\My codes\Thae Su.png",
+        p.image("Thae Su.png",
                 caption= "Name: -Dr. Thae Su")
         p.write("Specialization: Pediatrics & Child Health")
         p.write("Experience: 18 Years")
@@ -154,7 +154,7 @@ if aw == "Doctor List And Salary Analysis":
         p.write("End Date: September 19 2039")
 
     with s:
-        p.image(r"c:\Users\myosett\Desktop\My codes\d15c56be-f347-434d-ac31-f83dc26ae46e.png", 
+        p.image("d15c56be-f347-434d-ac31-f83dc26ae46e.png", 
                 caption= "Name: Dr. Myo Thu")
         p.write("Specialization: Neurology & Brain Disorders")
         p.write("Experience: 16 Years")
@@ -163,7 +163,7 @@ if aw == "Doctor List And Salary Analysis":
         p.write("End Date: September 29 2035")
 
     with v:
-        p.image(r"c:\Users\myosett\Desktop\My codes\d15c56be-f347-434d-ac31-f83dc26ae46e.png",
+        p.image("d15c56be-f347-434d-ac31-f83dc26ae46e.png",
                 caption= "Name: Dr. Khin OO")
         p.write("Specialization: General Surgery & Surgical Care")
         p.write("Experience: 14 Years")
