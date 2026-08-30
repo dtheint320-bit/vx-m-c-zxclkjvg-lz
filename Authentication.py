@@ -1,12 +1,9 @@
-import mysql.connector
+import sqlite3
 import streamlit as s
 import hashlib
 
 
-ye = mysql.connector.connect(host = "localhost",
-                              user = "root",
-                              password = "myogwin897",
-                              database= "hospital")
+ye = sqlite3.connect("m.db")
 
 n = ye.cursor()
 n.execute("""CREATE TABLE if not exists hosp (
@@ -52,10 +49,10 @@ with mb:
                             z = v.hexdigest()
                             x = o.hexdigest()
                             mq = n.execute("""INSERT INTO hosp (username, email, password, gender)
-                                    VALUES (%s,
-                                      %s,
-                                        %s,
-                                          %s)""", 
+                                    VALUES (?,
+                                      ?,
+                                        ?,
+                                          ?)""", 
                                           (q,
                                            x,
                                             a,
@@ -87,7 +84,7 @@ with sc:
                     c = dsa.hexdigest()
                     aq = qx.hexdigest()
 
-                    ea = n.execute("SELECT * FROM users WHERE email=%s AND password=%s",
+                    ea = n.execute("SELECT * FROM users WHERE email=? AND password=?",
     (c, aq))
                     qm = n.fetchone()
 
@@ -109,3 +106,4 @@ with sc:
 
 
 
+7
