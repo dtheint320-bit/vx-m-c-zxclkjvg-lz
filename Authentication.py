@@ -59,7 +59,7 @@ with mb:
                                               z))
                             ye.commit()
                             
-                            s.switch_page("pages/hospita.py")
+                            s.switch_page("pages/Website.py")
                             s.success("Successfully Finisted About Verifying")
     
     else:
